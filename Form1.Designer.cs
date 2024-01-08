@@ -55,6 +55,7 @@
             MakeSignUpButton.TabIndex = 1;
             MakeSignUpButton.Text = "Записаться на занятие";
             MakeSignUpButton.UseVisualStyleBackColor = true;
+            MakeSignUpButton.Click += MakeSignUpButton_Click;
             // 
             // DeleteSignUpButton
             // 

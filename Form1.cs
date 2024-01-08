@@ -21,5 +21,11 @@ namespace CR_RBD_Ulchenko
             SolveTicketsForm solveTicketsForm = new(dataBase.GetConnection());
             solveTicketsForm.ShowDialog();
         }
+
+        private void MakeSignUpButton_Click(object sender, EventArgs e)
+        {
+            AddSignUpForm addSignUpForm = new(dataBase.GetConnection());
+            addSignUpForm.ShowDialog();
+        }
     }
 }
