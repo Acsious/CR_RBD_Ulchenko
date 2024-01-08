@@ -66,6 +66,7 @@
             DeleteSignUpButton.TabIndex = 2;
             DeleteSignUpButton.Text = "Отменить запись на занятие";
             DeleteSignUpButton.UseVisualStyleBackColor = true;
+            DeleteSignUpButton.Click += DeleteSignUpButton_Click;
             // 
             // SolveTickets
             // 
