@@ -677,10 +677,10 @@ public partial class Ticket : Form
         if (radioButton76.Checked) { correctAnswers++; }
         if (radioButton80.Checked) { correctAnswers++; }
 
-        sqlExpression = $"select*from PerformanceOnTickets where UserID=39 and TicketID='{ticketId}'";
+        sqlExpression = $"select ID from PerformanceOnTickets where UserID=39 and TicketID='{ticketId}'";
         sqlCommand = new SqlCommand(sqlExpression, sc);
-        var res2 = sqlCommand.ExecuteNonQuery();
-        if (res2 != 0)
+        var res2 = sqlCommand.ExecuteScalar();
+        if (res2!=null)
         {
             if (correctAnswers > 18)
             {

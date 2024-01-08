@@ -48,8 +48,8 @@ namespace CR_RBD_Ulchenko
 
             sqlExpression = $"select*from PerformanceOnQuestions where UserID=39 and QuestionID='{QuestionId}'";
             sqlCommand = new SqlCommand(sqlExpression, sc);
-            var resul = sqlCommand.ExecuteNonQuery();
-            if (resul != 0)
+            var resul = sqlCommand.ExecuteScalar();
+            if (resul != null)
             {
                 if (radioButton1.Checked)
                 {
