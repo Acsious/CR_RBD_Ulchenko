@@ -651,6 +651,67 @@ public partial class Ticket : Form
     //TODO
     private void AnswerButton_Click(object sender, EventArgs e)
     {
+        int correctAnswers = 0;
+        var sqlExpression = $"select ID from Ticket where TicketNumber='{tn}'";
+        var sqlCommand = new SqlCommand(sqlExpression, sc);
+        var ticketId = sqlCommand.ExecuteScalar();
 
+        if (radioButton1.Checked) { correctAnswers++; }
+        if (radioButton8.Checked) { correctAnswers++; }
+        if (radioButton12.Checked) { correctAnswers++; }
+        if (radioButton16.Checked) { correctAnswers++; }
+        if (radioButton20.Checked) { correctAnswers++; }
+        if (radioButton24.Checked) { correctAnswers++; }
+        if (radioButton28.Checked) { correctAnswers++; }
+        if (radioButton32.Checked) { correctAnswers++; }
+        if (radioButton36.Checked) { correctAnswers++; }
+        if (radioButton40.Checked) { correctAnswers++; }
+        if (radioButton44.Checked) { correctAnswers++; }
+        if (radioButton48.Checked) { correctAnswers++; }
+        if (radioButton52.Checked) { correctAnswers++; }
+        if (radioButton56.Checked) { correctAnswers++; }
+        if (radioButton60.Checked) { correctAnswers++; }
+        if (radioButton64.Checked) { correctAnswers++; }
+        if (radioButton68.Checked) { correctAnswers++; }
+        if (radioButton72.Checked) { correctAnswers++; }
+        if (radioButton76.Checked) { correctAnswers++; }
+        if (radioButton80.Checked) { correctAnswers++; }
+
+        sqlExpression = $"select*from PerformanceOnTickets where UserID=39 and TicketID='{ticketId}'";
+        sqlCommand = new SqlCommand(sqlExpression, sc);
+        var res2 = sqlCommand.ExecuteNonQuery();
+        if (res2 != 0)
+        {
+            if (correctAnswers > 18)
+            {
+                sqlExpression = $"update PerformanceOnTickets set CorrectAnswer=1 where UserID=39 and TicketID='{ticketId}'";
+                sqlCommand = new SqlCommand(sqlExpression, sc);
+                sqlCommand.ExecuteNonQuery();
+            }
+            else
+            {
+                sqlExpression = $"update PerformanceOnTickets set CorrectAnswer=0 where UserID=39 and TicketID='{ticketId}'";
+                sqlCommand = new SqlCommand(sqlExpression, sc);
+                sqlCommand.ExecuteNonQuery();
+            }
+        }
+        else
+        {
+            if (correctAnswers >= 18)
+            {
+                sqlExpression = $"insert PerformanceOnTickets(CorrectAnswer,UserID,TicketID, SolveDate)" +
+                $" values (1,39,'{ticketId}','2024-09-01')";
+                sqlCommand = new SqlCommand(sqlExpression, sc);
+                sqlCommand.ExecuteNonQuery();
+            }
+            else
+            {
+                sqlExpression = $"insert PerformanceOnTickets(CorrectAnswer,UserID,TicketID, SolveDate)" +
+                $" values (0,39,'{ticketId}','2024-09-01')";
+                sqlCommand = new SqlCommand(sqlExpression, sc);
+                sqlCommand.ExecuteNonQuery();
+            }
+        }
+        this.Hide();
     }
 }
