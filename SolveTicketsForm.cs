@@ -1,4 +1,5 @@
-﻿using System.Data.SqlClient;
+﻿using System.Data;
+using System.Data.SqlClient;
 
 namespace CR_RBD_Ulchenko
 {
@@ -9,6 +10,10 @@ namespace CR_RBD_Ulchenko
         {
             InitializeComponent();
             sc = sqlConnection;
+            SqlDataAdapter adapter = new("select*from NumCorectAnswersOnTicketsPerDate", sc);
+            DataSet ds = new();
+            adapter.Fill(ds);
+            dataGridView1.DataSource = ds.Tables[0];
         }
 
         private void Ticket1Button_Click(object sender, EventArgs e)

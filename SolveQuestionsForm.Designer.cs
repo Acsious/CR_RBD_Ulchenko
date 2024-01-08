@@ -31,6 +31,8 @@
             button1 = new Button();
             label1 = new Label();
             comboBox1 = new ComboBox();
+            dataGridView1 = new DataGridView();
+            ((System.ComponentModel.ISupportInitialize)dataGridView1).BeginInit();
             SuspendLayout();
             // 
             // button1
@@ -38,7 +40,7 @@
             button1.Font = new Font("Segoe UI", 14.25F, FontStyle.Bold, GraphicsUnit.Point);
             button1.Location = new Point(23, 68);
             button1.Name = "button1";
-            button1.Size = new Size(404, 37);
+            button1.Size = new Size(176, 37);
             button1.TabIndex = 0;
             button1.Text = "Решать";
             button1.UseVisualStyleBackColor = true;
@@ -63,16 +65,31 @@
             comboBox1.Size = new Size(121, 23);
             comboBox1.TabIndex = 2;
             // 
+            // dataGridView1
+            // 
+            dataGridView1.AllowUserToAddRows = false;
+            dataGridView1.AllowUserToDeleteRows = false;
+            dataGridView1.Anchor = AnchorStyles.Top | AnchorStyles.Bottom | AnchorStyles.Left | AnchorStyles.Right;
+            dataGridView1.ColumnHeadersHeightSizeMode = DataGridViewColumnHeadersHeightSizeMode.AutoSize;
+            dataGridView1.Location = new Point(583, 24);
+            dataGridView1.Name = "dataGridView1";
+            dataGridView1.ReadOnly = true;
+            dataGridView1.RowTemplate.Height = 25;
+            dataGridView1.Size = new Size(374, 308);
+            dataGridView1.TabIndex = 3;
+            // 
             // SolveQuestionsForm
             // 
             AutoScaleDimensions = new SizeF(7F, 15F);
             AutoScaleMode = AutoScaleMode.Font;
-            ClientSize = new Size(606, 143);
+            ClientSize = new Size(969, 344);
+            Controls.Add(dataGridView1);
             Controls.Add(comboBox1);
             Controls.Add(label1);
             Controls.Add(button1);
             Name = "SolveQuestionsForm";
             Text = "Решать вопросы";
+            ((System.ComponentModel.ISupportInitialize)dataGridView1).EndInit();
             ResumeLayout(false);
             PerformLayout();
         }
@@ -82,5 +99,6 @@
         private Button button1;
         private Label label1;
         private ComboBox comboBox1;
+        private DataGridView dataGridView1;
     }
 }
