@@ -88,6 +88,7 @@
             SolveQuestions.TabIndex = 4;
             SolveQuestions.Text = "Решать вопросы";
             SolveQuestions.UseVisualStyleBackColor = true;
+            SolveQuestions.Click += SolveQuestions_Click;
             // 
             // Form1
             // 

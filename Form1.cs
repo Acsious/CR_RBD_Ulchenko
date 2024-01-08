@@ -33,5 +33,11 @@ namespace CR_RBD_Ulchenko
             RemoveSignUpForm removeSignUpForm = new(dataBase.GetConnection());
             removeSignUpForm.ShowDialog();
         }
+
+        private void SolveQuestions_Click(object sender, EventArgs e)
+        {
+            SolveQuestionsForm solveQuestionsForm = new(dataBase.GetConnection());
+            solveQuestionsForm.ShowDialog();
+        }
     }
 }
