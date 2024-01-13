@@ -1,0 +1,84 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<ClassDiagram MajorVersion="1" MinorVersion="1">
+  <Class Name="CR_RBD_Ulchenko.Ticket">
+    <Position X="10.5" Y="3.25" Width="1.75" />
+    <Compartments>
+      <Compartment Name="Fields" Collapsed="true" />
+    </Compartments>
+    <TypeIdentifier>
+      <HashCode>/xCBQQACACAAQBAAAACgIADC8A8AEAACAAIAAAABBDI=</HashCode>
+      <FileName>Ticket.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="CR_RBD_Ulchenko.SolveTicketsForm">
+    <Position X="8.25" Y="3.25" Width="1.75" />
+    <Compartments>
+      <Compartment Name="Fields" Collapsed="true" />
+    </Compartments>
+    <TypeIdentifier>
+      <HashCode>ABAA4AEAACAA8AAAAACAAAACAAgAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>SolveTicketsForm.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="CR_RBD_Ulchenko.SolveQuestionsForm">
+    <Position X="3" Y="3.25" Width="1.75" />
+    <Compartments>
+      <Compartment Name="Fields" Collapsed="true" />
+    </Compartments>
+    <TypeIdentifier>
+      <HashCode>ABAAAAAAACAAABAQAACAAAACAAgIAAAAAEAAAAAAAAA=</HashCode>
+      <FileName>SolveQuestionsForm.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="CR_RBD_Ulchenko.RemoveSignUpForm">
+    <Position X="9" Y="0.5" Width="1.75" />
+    <Compartments>
+      <Compartment Name="Fields" Collapsed="true" />
+    </Compartments>
+    <TypeIdentifier>
+      <HashCode>ABAAAAAAACAAABAQAACAAAACAAAIAAAAEEAAAAAAAAA=</HashCode>
+      <FileName>RemoveSignUpForm.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="CR_RBD_Ulchenko.Question">
+    <Position X="1" Y="3.25" Width="1.5" />
+    <Compartments>
+      <Compartment Name="Fields" Collapsed="true" />
+    </Compartments>
+    <TypeIdentifier>
+      <HashCode>ABAgAAAAACAAABAAAACAAAACAAAIAAAAAEAAAAAAAAI=</HashCode>
+      <FileName>Question.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="CR_RBD_Ulchenko.Form1">
+    <Position X="5.25" Y="3.25" Width="2.5" />
+    <Compartments>
+      <Compartment Name="Fields" Collapsed="true" />
+    </Compartments>
+    <TypeIdentifier>
+      <HashCode>AACgAAAAACAEUAAAAACAAAICABAAAAAAAAAAABgACAA=</HashCode>
+      <FileName>Form1.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="CR_RBD_Ulchenko.ChangeUserInfoForm">
+    <Position X="4" Y="0.5" Width="2.25" />
+    <Compartments>
+      <Compartment Name="Fields" Collapsed="true" />
+    </Compartments>
+    <TypeIdentifier>
+      <HashCode>ABAIAAAAACBAABAAAAGAIAAqAAAAAACAAAAAAAAAAAA=</HashCode>
+      <FileName>ChangeUserInfoForm.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="CR_RBD_Ulchenko.AddSignUpForm">
+    <Position X="6.75" Y="0.5" Width="1.75" />
+    <Compartments>
+      <Compartment Name="Fields" Collapsed="true" />
+    </Compartments>
+    <TypeIdentifier>
+      <HashCode>ABAAAAAAACAAABAQAACAAAACAAAIAAAAEEAAAAAAAAA=</HashCode>
+      <FileName>AddSignUpForm.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Font Name="Segoe UI" Size="9" />
+</ClassDiagram>
